@@ -1,0 +1,46 @@
+# Dependencies
+node_modules
+npm-debug.log
+
+# Elastic Beanstalk
+.elasticbeanstalk
+.ebextensions
+
+# Git
+.git
+.gitignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Test files
+test
+tests
+*.test.js
+coverage
+
+# Documentation
+README.md
+docs
+
+# Misc
+.editorconfig
+.eslintrc
+.prettierrc

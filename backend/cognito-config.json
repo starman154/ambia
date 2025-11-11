@@ -1,0 +1,34 @@
+{
+  "PoolName": "AmbiaUserPool",
+  "AutoVerifiedAttributes": ["email"],
+  "UsernameAttributes": ["email"],
+  "Policies": {
+    "PasswordPolicy": {
+      "MinimumLength": 8,
+      "RequireUppercase": true,
+      "RequireLowercase": true,
+      "RequireNumbers": true,
+      "RequireSymbols": false
+    }
+  },
+  "MfaConfiguration": "OFF",
+  "EmailConfiguration": {
+    "EmailSendingAccount": "COGNITO_DEFAULT"
+  },
+  "VerificationMessageTemplate": {
+    "DefaultEmailOption": "CONFIRM_WITH_CODE",
+    "EmailMessage": "Your Ambia verification code is {####}",
+    "EmailSubject": "Verify your Ambia account"
+  },
+  "UserAttributeUpdateSettings": {
+    "AttributesRequireVerificationBeforeUpdate": ["email"]
+  },
+  "Schema": [
+    {
+      "Name": "email",
+      "AttributeDataType": "String",
+      "Mutable": true,
+      "Required": true
+    }
+  ]
+}

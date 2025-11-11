@@ -1,0 +1,13 @@
+node_modules/
+.env
+.DS_Store
+*.log
+.git/
+.gitignore
+database/
+.ebextensions/
+lambda/
+*.zip
+test-create-event.js
+delete-test-event.js
+*.md
