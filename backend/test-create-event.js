@@ -2,10 +2,10 @@ const mysql = require('mysql2/promise');
 
 async function createTestEvent() {
   const connection = await mysql.createConnection({
-    host: 'ambia-production.cpkies6y2q57.us-east-2.rds.amazonaws.com',
-    user: 'admin',
-    password: 'wjWoYROnFnLZwOFfKs4Ec8iIjbWst8jf',
-    database: 'ambia'
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'admin',
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME || 'ambia'
   });
 
   try {
